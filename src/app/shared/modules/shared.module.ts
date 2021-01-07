@@ -5,6 +5,7 @@ import { FilterPipe } from "../pipes/filter.pipe";
 
 @NgModule({
   declarations: [SelectedDirective, FilterPipe],
-  imports: [CommonModule]
+  imports: [CommonModule],
+  exports: [CommonModule, SelectedDirective, FilterPipe]
 })
 export class SharedModule {}
