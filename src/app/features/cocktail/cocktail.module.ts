@@ -1,5 +1,4 @@
 import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
 import { CocktailListComponent } from "./cocktail-container/cocktail-list/cocktail-list.component";
 import { CocktailDetailsComponent } from "./cocktail-container/cocktail-details/cocktail-details.component";
 import { CocktailContainerComponent } from "./cocktail-container/cocktail-container.component";
@@ -17,7 +16,6 @@ import { SharedModule } from "../../shared/modules/shared.module";
     CocktailFormComponent
   ],
   imports: [
-    CommonModule,
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forChild(COCKTAIL_ROUTES),
